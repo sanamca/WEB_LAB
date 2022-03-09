@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background</title>
+</head>
+<body>
+<h1 id="h">This is a Heading</h1>
+<p>This is a paragraph of text</p>
+<hr>
+Change Webpage Background To:
+<button onclick="changeback('yellow')"> Yellow </button>
+<button onclick="changeback('lime')"> Lime </button>
+<button onclick="changeback('orange')"> Orange </button>
+<br>
+<br>
+change Heading Background To:
+<button onclick="changehead('red')"> Red </button>
+<button onclick="changehead('green')"> Green </button>
+<button onclick="changehead('blue')"> Blue </button>
+<script>
+function changeback(color) {
+document.body.style.background=color
+}	
+function changehead(color) {
+var c=document.getElementById("h");
+c.style.background=color
+}	
+</script>
+</body>
+</html>

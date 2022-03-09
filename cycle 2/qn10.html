@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouseover</title>
+</head>
+<body>
+<h2><a href="http:www.google.com" onmouseover="show()" onmouseout="hide()">Go to Google</a></h2>
+
+<div id="t1"></div>
+
+<div id="t2"></div>
+
+<script>
+
+function show(){
+
+    document.getElementById("t1").innerHTML="<h1><center>WELCOME</center></h1>";
+    var im='<center><img src="img2.jpg" height="400" width="450"></center>'
+    document.getElementById("t2").innerHTML=im;
+}
+
+
+function hide(){
+    document.getElementById("t1").innerHTML="";
+     document.getElementById("t2").innerHTML="";
+}
+
+</script>
+</body>
+</html>
